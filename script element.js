@@ -1,7 +1,7 @@
-var toggledMenu = document.getElementById("menu-toggle");
-var activeElements = document.getElementById(".active-element");
+var menuToggle = document.querySelector("#menu-toggle");
+var activeElements = document.querySelectorAll(".active-element");
 
-var toggledMenu = toggledMenu.addEventListener("click", function () {
+var toggledMenu = menuToggle.addEventListener("click", function () {
     // forEach is not supported in IE11
     // activeElements.forEach(function(e){
     //     e.classList.toggle("active");
